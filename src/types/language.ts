@@ -1,4 +1,4 @@
-export type Language = 'uk' | 'en';
+export type Language = 'uk' | 'ru';
 
 export interface TranslationContent {
   hero: {

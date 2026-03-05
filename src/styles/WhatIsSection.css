@@ -1,0 +1,129 @@
+/* SECTION */
+
+.whatis {
+  position: relative;
+  padding: 80px 0; /* py-20 */
+  background: #0f172a; /* slate-900 */
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+
+.whatis-bg {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.07;
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* CONTAINER */
+
+.whatis-container {
+  position: relative;
+  z-index: 10;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px; /* px-4 */
+}
+
+/* INNER */
+
+.whatis-inner {
+  max-width: 896px; /* max-w-4xl */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+
+.whatis-title {
+  font-size: 30px; /* text-3xl */
+  font-weight: 300; /* font-light */
+  color: #ffffff;
+
+  margin-bottom: 32px; /* mb-8 */
+}
+
+@media (min-width: 768px) {
+  .whatis-title {
+    font-size: 48px; /* md:text-5xl */
+  }
+}
+
+/* SUBTITLE */
+
+.whatis-subtitle {
+  font-size: 24px; /* text-2xl */
+  color: #fef3c7; /* amber-100 */
+
+  margin-bottom: 32px; /* mb-8 */
+
+  font-weight: 300;
+  line-height: 1.6; /* leading-relaxed */
+}
+
+@media (min-width: 768px) {
+  .whatis-subtitle {
+    font-size: 30px; /* md:text-3xl */
+  }
+}
+
+/* DESCRIPTION */
+
+.whatis-description {
+  font-size: 20px; /* text-xl */
+  color: #cbd5e1; /* slate-300 */
+
+  margin-bottom: 48px; /* mb-12 */
+  line-height: 1.75; /* leading-relaxed */
+}
+
+/* POINTS LIST */
+
+.whatis-points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space-y-4 */
+
+  margin-bottom: 48px; /* mb-12 */
+}
+
+/* CARD */
+
+.whatis-card {
+  padding: 16px;
+
+  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+
+  backdrop-filter: blur(6px);
+
+  border-radius: 8px;
+
+  border: 1px solid #334155; /* slate-700 */
+
+  transition: transform 0.2s ease;
+}
+
+.whatis-card:hover {
+  transform: scale(1.02); /* hover:scale-102 */
+}
+
+/* TEXT */
+
+.whatis-card-text {
+  font-size: 18px; /* text-lg */
+  color: #ffffff;
+}
+
+/* CONCLUSION */
+
+.whatis-conclusion {
+  font-size: 24px; /* text-2xl */
+  color: #fde68a; /* amber-200 */
+
+  font-weight: 300;
+}

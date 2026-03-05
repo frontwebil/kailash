@@ -1,0 +1,158 @@
+/* SECTION */
+
+.finalcta {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+
+.finalcta-bg {
+  position: absolute;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.finalcta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.999),
+    rgba(15, 23, 42, 0.89),
+    rgba(15, 23, 42, 0.9)
+  );
+}
+
+/* CONTAINER */
+
+.finalcta-container {
+  position: relative;
+  z-index: 10;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* INNER */
+
+.finalcta-inner {
+  max-width: 896px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+
+.finalcta-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .finalcta-title {
+    font-size: 48px;
+  }
+}
+
+/* PRICE BOX */
+
+.finalcta-price-box {
+  background: rgba(120, 53, 15, 0.2); /* amber-900/20 */
+  border: 2px solid rgba(217, 119, 6, 0.5); /* amber-600/50 */
+  border-radius: 12px;
+
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.finalcta-price-note {
+  font-size: 20px;
+  color: #fde68a; /* amber-200 */
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .finalcta-price-note {
+    font-size: 24px;
+  }
+}
+
+/* INTRO */
+
+.finalcta-intro {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+/* BENEFITS */
+
+.finalcta-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.finalcta-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.finalcta-check {
+  color: #4ade80; /* green-400 */
+  flex-shrink: 0;
+}
+
+/* CONCLUSION */
+
+.finalcta-conclusion {
+  font-size: 20px;
+  color: #fef3c7; /* amber-100 */
+  margin-bottom: 40px;
+
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* BUTTON */
+
+.finalcta-button {
+  padding: 20px 40px;
+  border-radius: 8px;
+
+  background: #d97706;
+  color: white;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  border: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow: 0 20px 40px rgba(120, 53, 15, 0.5);
+}
+
+.finalcta-button:hover {
+  background: #f59e0b;
+  transform: scale(1.05);
+}

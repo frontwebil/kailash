@@ -1,0 +1,150 @@
+/* SECTION */
+
+.safety {
+  padding: 80px 0; /* py-20 */
+  background: linear-gradient(to bottom, #1e293b, #0f172a); /* slate gradient */
+}
+
+/* CONTAINER */
+
+.safety-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* INNER */
+
+.safety-inner {
+  max-width: 896px; /* max-w-4xl */
+  margin: 0 auto;
+}
+
+/* ICON */
+
+.safety-icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.safety-icon-circle {
+  padding: 16px;
+  background: rgba(20, 83, 45, 0.3); /* green-900/30 */
+  border-radius: 999px;
+  border: 1px solid rgba(22, 163, 74, 0.3); /* green-600/30 */
+}
+
+.safety-icon {
+  color: #4ade80; /* green-400 */
+}
+
+/* TITLE */
+
+.safety-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .safety-title {
+    font-size: 48px;
+  }
+}
+
+/* DESCRIPTION */
+
+.safety-description {
+  font-size: 20px;
+  color: #cbd5e1; /* slate-300 */
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* GRID */
+
+.safety-grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .safety-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* FEATURE CARD */
+
+.safety-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 16px;
+
+  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+/* CHECK ICON */
+
+.safety-check {
+  color: #4ade80; /* green-400 */
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* FEATURE TEXT */
+
+.safety-feature-text {
+  color: #e2e8f0; /* slate-200 */
+}
+
+/* NOTE */
+
+.safety-note {
+  font-size: 18px;
+  color: #cbd5e1;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+/* CTA */
+
+.safety-cta-wrap {
+  text-align: center;
+}
+
+.safety-cta {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background: #d97706; /* amber-600 */
+  color: white;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow:
+    0 10px 15px rgba(0, 0, 0, 0.25),
+    0 18px 40px rgba(120, 53, 15, 0.5);
+}
+
+.safety-cta:hover {
+  background: #f59e0b; /* amber-500 */
+  transform: scale(1.05);
+}

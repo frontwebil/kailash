@@ -1,0 +1,77 @@
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+
+  background: rgba(15, 23, 42, 0.8); /* slate-900/80 */
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #1e293b; /* slate-800 */
+}
+
+/* CONTAINER */
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #fef3c7; /* amber-100 */
+}
+
+/* BUTTON */
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+
+  border: 1px solid #334155; /* slate-700 */
+
+  transition: background 0.2s ease;
+
+  cursor: pointer;
+}
+
+.lang-button:hover {
+  background: rgba(51, 65, 85, 0.5); /* slate-700/50 */
+}
+
+/* ICON */
+
+.globe-icon {
+  color: #fde68a; /* amber-200 */
+}
+
+/* TEXT */
+
+.lang-text {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #e2e8f0; /* slate-200 */
+
+  text-transform: uppercase;
+}

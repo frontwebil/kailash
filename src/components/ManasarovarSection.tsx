@@ -1,26 +1,31 @@
-import { useLanguage } from '../context/LanguageContext';
-import { Droplet } from 'lucide-react';
+import { useLanguage } from "../context/LanguageContext";
+import { Droplet } from "lucide-react";
+import "../styles/ManasarovarSection.css";
 
 export function ManasarovarSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-slate-900">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-6">
-            <div className="p-4 bg-blue-900/30 rounded-full border border-blue-600/30">
-              <Droplet className="text-blue-400" size={40} />
+    <section className="manasarovar">
+      <div className="manasarovar-container">
+        <div className="manasarovar-inner">
+          <div className="manasarovar-icon-wrap">
+            <div className="manasarovar-icon-circle">
+              <Droplet className="manasarovar-icon" size={40} />
             </div>
           </div>
+              <h2 className="manasarovar-title">{t.manasarovar.title}</h2>
+          <div className="manasovar-flex-container">
+            <div className="manasarovar-text-container">
 
-          <h2 className="text-3xl md:text-5xl font-light text-white mb-8">
-            {t.manasarovar.title}
-          </h2>
-
-          <p className="text-xl text-slate-200 leading-relaxed">
-            {t.manasarovar.description}
-          </p>
+              <p className="manasarovar-description">
+                {t.manasarovar.description}
+              </p>
+            </div>
+            <div className="manasovar-img">
+              <img src="/manasovar.webp" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

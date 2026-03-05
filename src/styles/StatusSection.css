@@ -1,0 +1,139 @@
+/* SECTION */
+
+.status {
+  padding: 80px 0;
+  background: #0f172a; /* slate-900 */
+}
+
+/* CONTAINER */
+
+.status-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* INNER */
+
+.status-inner {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+/* ICON */
+
+.status-icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.status-icon-circle {
+  padding: 16px;
+  background: rgba(120, 53, 15, 0.3); /* amber-900/30 */
+  border-radius: 999px;
+  border: 1px solid rgba(217, 119, 6, 0.3); /* amber-600/30 */
+}
+
+.status-icon {
+  color: #fbbf24; /* amber-400 */
+}
+
+/* TITLE */
+
+.status-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .status-title {
+    font-size: 48px;
+  }
+}
+
+/* POINTS */
+
+.status-points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* CARD */
+
+.status-card {
+  padding: 20px;
+  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+  border-left: 4px solid #d97706; /* amber-600 */
+  border-radius: 8px;
+  text-align: center;
+}
+
+.status-card-text {
+  font-size: 20px;
+  color: #e2e8f0; /* slate-200 */
+}
+
+/* PRICE BLOCK */
+
+.status-price-block {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.status-price {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fbbf24; /* amber-400 */
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .status-price {
+    font-size: 30px;
+  }
+}
+
+.status-conclusion {
+  font-size: 18px;
+  color: #cbd5e1; /* slate-300 */
+  font-style: italic;
+}
+
+/* CTA */
+
+.status-cta-wrap {
+  text-align: center;
+}
+
+.status-cta {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background: #d97706; /* amber-600 */
+  color: white;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+
+  box-shadow:
+    0 10px 15px rgba(0, 0, 0, 0.25),
+    0 18px 40px rgba(120, 53, 15, 0.5);
+}
+
+.status-cta:hover {
+  background: #f59e0b; /* amber-500 */
+  transform: scale(1.05);
+}
