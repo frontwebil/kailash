@@ -1,4 +1,3 @@
-/* HERO WRAPPER */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -10,7 +9,6 @@
   overflow: hidden;
 }
 
-/* BACKGROUND */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -23,7 +21,6 @@
   position: absolute;
   inset: 0;
 
-  /* bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/90 */
   background: linear-gradient(
     to bottom,
     rgba(15, 23, 42, 0.7),
@@ -32,7 +29,6 @@
   );
 }
 
-/* CONTENT */
 .hero-content {
   position: relative;
   z-index: 10;
@@ -44,80 +40,75 @@
   text-align: center;
 }
 
-/* TITLE */
 .hero-title {
-  font-size: 36px; /* text-4xl */
-  font-weight: 300; /* font-light */
+  font-size: 36px;
+  font-weight: 300;
   color: #ffffff;
-  margin-bottom: 24px; /* mb-6 */
-  line-height: 1.25; /* leading-tight */
+  margin-bottom: 24px;
+  line-height: 1.25;
 
-  max-width: 64rem; /* max-w-5xl */
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
 
-  margin-top: 20px; /* mt-5 */
+  margin-top: 20px;
 }
 
-/* RESPONSIVE TITLE */
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 60px; /* md:text-6xl */
+    font-size: 60px;
   }
 }
 @media (min-width: 1024px) {
   .hero-title {
-    font-size: 64px; /* lg:text-7xl */
+    font-size: 64px;
   }
 }
 
-/* SUBTITLE */
 .hero-subtitle {
-  font-size: 20px; /* text-xl */
-  color: #fef3c7; /* amber-100 */
-  margin-bottom: 12px; /* mb-3 */
+  font-size: 20px;
+  color: #fef3c7; 
+  margin-bottom: 12px;
   font-weight: 300;
 }
 @media (min-width: 768px) {
   .hero-subtitle {
-    font-size: 24px; /* md:text-2xl */
+    font-size: 24px;
   }
 }
 
-/* LOCATION */
 .hero-location {
-  font-size: 18px; /* text-lg */
-  color: #cbd5e1; /* slate-300 */
-  margin-bottom: 16px; /* mb-8 */
+  font-size: 18px; 
+  color: #cbd5e1; 
+  margin-bottom: 16px; 
   font-weight: 300;
 }
 @media (min-width: 768px) {
   .hero-location {
-    font-size: 20px; /* md:text-xl */
+    font-size: 20px;
   }
 }
 
-/* INFO BLOCK */
 .hero-info {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* gap-2 */
-  margin-bottom: 32px; /* mb-8 */
+  gap: 8px; 
+  margin-bottom: 32px; 
 }
 
 .hero-not-tour {
-  font-size: 18px; /* text-lg */
-  color: #94a3b8; /* slate-400 */
+  font-size: 18px; 
+  color: #94a3b8; 
 }
 
 .hero-event {
-  font-size: 20px; /* text-xl */
+  font-size: 20px;
   color: #ffffff;
   font-weight: 300;
 }
 @media (min-width: 768px) {
   .hero-event {
-    font-size: 24px; /* md:text-2xl */
+    font-size: 24px;
   }
 }
 
@@ -125,50 +116,49 @@
 .hero-dates {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* gap-4 */
+  gap: 16px; 
 
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 48px; /* mb-12 */
+  margin-bottom: 48px; 
 }
 
 @media (min-width: 640px) {
   .hero-dates {
-    flex-direction: row; /* sm:flex-row */
+    flex-direction: row; 
   }
 }
 
-/* DATE PILL */
 .hero-date-pill {
   display: flex;
   align-items: center;
-  gap: 8px; /* gap-2 */
+  gap: 8px; 
 
-  color: #fde68a; /* text-amber-200 */
-  background: rgba(30, 41, 59, 0.75); /* bg-slate-800/50 */
+  color: #fde68a; 
+  background: rgba(30, 41, 59, 0.75);
 
-  padding: 12px 24px; /* px-6 py-3 */
-  border-radius: 8px; /* rounded-lg */
+  padding: 12px 24px; 
+  border-radius: 8px; 
 
-  border: 1px solid rgba(120, 53, 15, 0.3); /* border-amber-900/30 */
+  border: 1px solid rgba(120, 53, 15, 0.3);
 }
 
 .hero-date-text {
-  font-size: 18px; /* text-lg */
+  font-size: 18px;
 }
 
 /* CTA BUTTON */
 .hero-cta {
   display: inline-block;
 
-  padding: 16px 32px; /* px-8 py-4 */
-  border-radius: 8px; /* rounded-lg */
+  padding: 16px 32px;
+  border-radius: 8px; 
 
-  background: #d97706; /* amber-600 */
+  background: #d97706;
   color: #ffffff;
 
-  font-size: 18px; /* text-lg */
+  font-size: 18px;
   font-weight: 500;
 
   border: none;
@@ -180,7 +170,6 @@
     box-shadow 0.2s ease;
   transform: translateZ(0);
 
-  /* shadow-lg shadow-amber-900/50 */
   box-shadow:
     0 10px 15px -3px rgba(0, 0, 0, 0.25),
     0 4px 6px -4px rgba(0, 0, 0, 0.25),
@@ -189,35 +178,34 @@
 }
 
 .hero-cta:hover {
-  background: #f59e0b; /* amber-500 */
-  transform: scale(1.05); /* hover:scale-105 */
+  background: #f59e0b; 
+  transform: scale(1.05); 
 }
 
-/* -------- OPTIONAL SCROLL HINT (якщо розкоментуєш) -------- */
 
 .scroll-hint {
   position: absolute;
-  bottom: 32px; /* bottom-8 */
+  bottom: 32px; 
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 1s infinite;
 }
 
 .scroll-mouse {
-  width: 24px; /* w-6 */
-  height: 40px; /* h-10 */
-  border: 2px solid rgba(253, 230, 138, 0.5); /* border-amber-200/50 */
+  width: 24px;
+  height: 40px; 
+  border: 2px solid rgba(253, 230, 138, 0.5);
   border-radius: 999px;
   display: flex;
   justify-content: center;
 }
 
 .scroll-dot {
-  width: 6px; /* w-1.5 */
-  height: 12px; /* h-3 */
-  background: rgba(253, 230, 138, 0.5); /* bg-amber-200/50 */
+  width: 6px; 
+  height: 12px; 
+  background: rgba(253, 230, 138, 0.5);
   border-radius: 999px;
-  margin-top: 8px; /* mt-2 */
+  margin-top: 8px; 
 }
 
 @keyframes bounce {
