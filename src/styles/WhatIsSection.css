@@ -2,21 +2,61 @@
 
 .whatis {
   position: relative;
-  padding: 80px 0; /* py-20 */
-  background: #0f172a; /* slate-900 */
+  padding: 30px 0 80px;
+  background: linear-gradient(to bottom, #fbf8f1 0%, #f3ead7 50%, #fbf8f1 100%);
   overflow: hidden;
 }
 
 /* BACKGROUND IMAGE */
 
-.whatis-bg {
-  position: absolute;
-  inset: 0;
-
-  opacity: 0.07;
+.whatis-photo-block {
+  background-image:
+    linear-gradient(rgba(45, 34, 18, 0.45), rgba(45, 34, 18, 0.2)),
+    url("/sunset-opacit.jpg");
 
   background-size: cover;
-  background-position: center;
+  background-position: top;
+
+  padding: 120px 40px;
+  margin-top: 60px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* верхній fade */
+.whatis-photo-block::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(251, 248, 241),
+    rgba(251, 248, 241, 0)
+  );
+  backdrop-filter: blur(1px);
+
+  z-index: 1;
+}
+
+.whatis-photo-block::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 51%;
+  backdrop-filter: blur(1px);
+
+  background: linear-gradient(to top, #fbf8f1, rgba(251, 248, 241, 0));
+
+  z-index: 1;
 }
 
 /* CONTAINER */
@@ -24,55 +64,43 @@
 .whatis-container {
   position: relative;
   z-index: 10;
-
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 16px; /* px-4 */
+  padding: 0 16px;
   text-align: center;
 }
 
 /* TITLE */
 
 .whatis-title {
-  font-size: 30px; /* text-3xl */
-  font-weight: 300; /* font-light */
-  color: #ffffff;
-
-  margin-bottom: 32px; /* mb-8 */
-}
-
-@media (min-width: 768px) {
-  .whatis-title {
-    font-size: 48px; /* md:text-5xl */
-  }
+  color: #241a0c;
+  margin-bottom: 24px;
 }
 
 /* SUBTITLE */
 
 .whatis-subtitle {
-  font-size: 24px; /* text-2xl */
-  color: #fef3c7; /* amber-100 */
-
-  margin-bottom: 32px; /* mb-8 */
-
-  font-weight: 300;
-  line-height: 1.6; /* leading-relaxed */
+  font-size: 24px;
+  color: #241a0c;
+  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
   .whatis-subtitle {
-    font-size: 30px; /* md:text-3xl */
+    font-size: 30px;
   }
 }
 
 /* DESCRIPTION */
 
 .whatis-description {
-  font-size: 20px; /* text-xl */
-  color: #cbd5e1; /* slate-300 */
-
-  margin-bottom: 48px; /* mb-12 */
-  line-height: 1.75; /* leading-relaxed */
+  font-size: 20px;
+  color: #241a0c;
+  margin-bottom: 24px;
+  line-height: 1.75;
+  font-family: 400;
 }
 
 /* POINTS LIST */
@@ -80,47 +108,44 @@
 .whatis-points {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* space-y-4 */
-
-  margin-bottom: 48px; /* mb-12 */
+  gap: 16px;
+  margin-bottom: 48px;
 }
 
 /* CARD */
 
 .whatis-card {
   padding: 16px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
 
-  background: rgba(30, 41, 59, 0.75);
-  border-radius: 8px;
-  border: 1px solid rgba(120, 53, 15, 0.3);
-
-  backdrop-filter: blur(6px);
-
-  border-radius: 8px;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #334155; /* slate-700 */
 
-  transition: transform 0.2s ease;
-}
+  border: 1px solid #eadfc6;
 
-.whatis-card:hover {
-  transform: scale(1.02); /* hover:scale-102 */
+  box-shadow: 0 6px 18px rgba(120, 90, 20, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+  /* border-left: 4px solid #c6a75e; */
 }
 
 /* TEXT */
 
 .whatis-card-text {
-  font-size: 18px; /* text-lg */
-  color: #fde68a;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5b4518;
 }
 
 /* CONCLUSION */
 
 .whatis-conclusion {
-  font-size: 24px; /* text-2xl */
-  color: #fde68a; /* amber-200 */
-
+  font-size: 24px;
+  color: #6b5422;
   font-weight: 300;
 }

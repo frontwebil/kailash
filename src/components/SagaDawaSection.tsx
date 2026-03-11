@@ -12,25 +12,29 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
   return (
     <section className="saga">
       <div className="saga-container">
-        <div className="saga-inner">
-          <div className="saga-badge">
-            <Sparkles className="saga-badge-icon" size={24} />
-            <span className="saga-badge-text">{t.sagaDawa.badge}</span>
-          </div>
+        <div className="saga-badge">
+          <Sparkles className="saga-badge-icon" size={24} />
+          <span className="saga-badge-text">{t.sagaDawa.badge}</span>
+        </div>
 
-          <h2 className="saga-title">{t.sagaDawa.title}</h2>
+        <h2 className="saga-title">{t.sagaDawa.title}</h2>
 
-          <p className="saga-desc">{t.sagaDawa.description}</p>
+        <p className="saga-desc">{t.sagaDawa.description}</p>
 
-          <div className="saga-features">
-            {t.sagaDawa.features.map((feature, index) => (
-              <div key={index} className="saga-feature-card">
-                <p className="saga-feature-text">• {feature}</p>
-              </div>
-            ))}
-          </div>
+        <div className="saga-features">
+          {t.sagaDawa.features.map((feature, index) => (
+            <div key={index} className="saga-feature-card">
+              <p className="saga-feature-text">• {feature}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-          <h3 className="saga-why-title section-title-font-size">{t.sagaDawa.why}</h3>
+      <div className="saga-photo-block">
+        <div className="saga-container">
+          <h3 className="saga-why-title section-title-font-size">
+            {t.sagaDawa.why}
+          </h3>
 
           <div className="saga-flex-container">
             <div className="saga-why">
@@ -40,12 +44,7 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
                 </div>
               ))}
             </div>
-            <div className="saga-flex-img">
-              <img src="/sunset.jpg" alt="" className="w-1/2" />
-            </div>
           </div>
-
-          <p className="saga-conclusion">{t.sagaDawa.conclusion}</p>
 
           <div className="saga-important">
             <div className="saga-important-row">
@@ -68,13 +67,14 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
 
             <p className="saga-important-note">{t.sagaDawa.importantNote}</p>
           </div>
-
-          <div className="saga-cta-wrap">
-            <button onClick={onCtaClick} className="saga-cta">
-              {t.sagaDawa.cta}
-            </button>
-          </div>
         </div>
+      </div>
+      <div className="saga-cta-wrap">
+        <p className="saga-conclusion">{t.sagaDawa.conclusion}</p>
+
+        <button onClick={onCtaClick} className="saga-cta">
+          {t.sagaDawa.cta}
+        </button>
       </div>
     </section>
   );

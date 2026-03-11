@@ -6,11 +6,6 @@
   left: 0;
   right: 0;
   z-index: 50;
-
-  background: rgba(15, 23, 42, 0.8); /* slate-900/80 */
-  backdrop-filter: blur(12px);
-
-  border-bottom: 1px solid #1e293b; /* slate-800 */
 }
 
 /* CONTAINER */
@@ -32,7 +27,7 @@
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0.08em;
-  color: #fef3c7; /* amber-100 */
+  color: #f4e7c6;
 }
 
 /* BUTTON */
@@ -46,23 +41,26 @@
 
   border-radius: 8px;
 
-  background: rgba(30, 41, 59, 0.5); /* slate-800/50 */
+  background: rgba(255, 255, 255, 0.1);
 
-  border: 1px solid #334155; /* slate-700 */
+  border: 1px solid rgba(198, 167, 94, 0.35);
 
-  transition: background 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border 0.2s ease;
 
   cursor: pointer;
 }
 
 .lang-button:hover {
-  background: rgba(51, 65, 85, 0.5); /* slate-700/50 */
+  background: rgba(198, 167, 94, 0.15);
+  border: 1px solid rgba(198, 167, 94, 0.6);
 }
 
 /* ICON */
 
 .globe-icon {
-  color: #fde68a; /* amber-200 */
+  color: #c6a75e;
 }
 
 /* TEXT */
@@ -71,7 +69,14 @@
   font-size: 14px;
   font-weight: 500;
 
-  color: #e2e8f0; /* slate-200 */
+  color: #f4e7c6;
 
   text-transform: uppercase;
+}
+
+.header.scrolled {
+  background: rgba(45, 34, 18, 0.7);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
 }

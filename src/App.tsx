@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { LanguageProvider } from './context/LanguageContext';
-import { Header } from './components/Header';
-import { HeroSection } from './components/HeroSection';
-import { SagaDawaSection } from './components/SagaDawaSection';
-import { WhatIsSection } from './components/WhatIsSection';
-import { ForWhomSection } from './components/ForWhomSection';
-import { KoraSection } from './components/KoraSection';
-import { ManasarovarSection } from './components/ManasarovarSection';
-import { SafetySection } from './components/SafetySection';
-import { StatusSection } from './components/StatusSection';
-import { FinalCtaSection } from './components/FinalCtaSection';
-import { ApplicationForm } from './components/ApplicationForm';
-import { Footer } from './components/Footer';
+import { useState } from "react";
+import { LanguageProvider } from "./context/LanguageContext";
+import { Header } from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
+import { SagaDawaSection } from "./components/SagaDawaSection";
+import { WhatIsSection } from "./components/WhatIsSection";
+import { ForWhomSection } from "./components/ForWhomSection";
+import { KoraSection } from "./components/KoraSection";
+import { ManasarovarSection } from "./components/ManasarovarSection";
+import { SafetySection } from "./components/SafetySection";
+import { StatusSection } from "./components/StatusSection";
+import { FinalCtaSection } from "./components/FinalCtaSection";
+import { ApplicationForm } from "./components/ApplicationForm";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -30,10 +30,10 @@ function App() {
         <ForWhomSection onCtaClick={() => setIsFormOpen(true)} />
 
         <KoraSection />
+        
+        <SafetySection onCtaClick={() => setIsFormOpen(true)} />
 
         <ManasarovarSection />
-
-        <SafetySection onCtaClick={() => setIsFormOpen(true)} />
 
         <StatusSection onCtaClick={() => setIsFormOpen(true)} />
 

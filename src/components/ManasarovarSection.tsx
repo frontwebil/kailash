@@ -14,16 +14,12 @@ export function ManasarovarSection() {
               <Droplet className="manasarovar-icon" size={40} />
             </div>
           </div>
-              <h2 className="manasarovar-title">{t.manasarovar.title}</h2>
+          <h2 className="manasarovar-title">{t.manasarovar.title}</h2>
           <div className="manasovar-flex-container">
             <div className="manasarovar-text-container">
-
               <p className="manasarovar-description">
                 {t.manasarovar.description}
               </p>
-            </div>
-            <div className="manasovar-img">
-              <img src="/manasovar.webp" alt="" />
             </div>
           </div>
         </div>
