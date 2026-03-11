@@ -12,7 +12,7 @@ export function ForWhomSection({ onCtaClick }: ForWhomSectionProps) {
   return (
     <section className="forwhom">
       <div className="forwhom-container">
-        <h2 className="forwhom-title">{t.forWhom.title}</h2>
+        <h2 className="forwhom-title section-title-font-size">{t.forWhom.title}</h2>
 
         <div className="forwhom-inner">
           <div className="forwhom-card">

@@ -88,6 +88,7 @@ export interface TranslationContent {
     benefits: string[];
     conclusion: string;
     cta: string;
+    ctaInfo: string;
   };
   form: {
     title: string;

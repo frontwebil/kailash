@@ -26,10 +26,13 @@ export function FinalCtaSection({ onCtaClick }: FinalCtaSectionProps) {
           <h2 className="finalcta-title">{t.finalCta.title}</h2>
 
           <div className="finalcta-price-box">
-            <p className="finalcta-price-note">{t.finalCta.priceNote}</p>
+            <p className="finalcta-price-note">
+              {t.finalCta.priceNote}{" "}
+              <span className="line-through font-normal">3500€</span>
+            </p>
           </div>
 
-          <p className="finalcta-intro">{t.hero.cta}:</p>
+          <p className="finalcta-intro">{t.finalCta.ctaInfo}:</p>
 
           <div className="finalcta-benefits">
             {t.finalCta.benefits.map((benefit, index) => (

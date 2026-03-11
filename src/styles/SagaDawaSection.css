@@ -15,18 +15,13 @@
   padding: 0 16px; /* px-4 */
 }
 
-.saga-inner {
-  max-width: 896px; /* max-w-4xl */
-  margin: 0 auto;
-}
-
 /* BADGE */
 .saga-badge {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px; /* gap-2 */
-  margin-bottom: 24px; /* mb-6 */
+  margin-bottom: 6px; /* mb-6 */
 }
 
 .saga-badge-icon {
@@ -35,7 +30,7 @@
 
 .saga-badge-text {
   color: #fbbf24; /* amber-400 */
-  font-size: 12px; /* text-sm */
+  font-size: 36px; /* text-sm */
   font-weight: 500; /* font-medium */
   text-transform: uppercase;
   letter-spacing: 0.08em; /* tracking-wider */
@@ -43,7 +38,7 @@
 
 /* TITLES */
 .saga-title {
-  font-size: 30px; /* text-3xl */
+  font-size: 16px; /* text-3xl */
   font-weight: 300; /* font-light */
   color: #ffffff;
   text-align: center;
@@ -52,7 +47,7 @@
 
 @media (min-width: 768px) {
   .saga-title {
-    font-size: 48px; /* md:text-5xl */
+    font-size: 28px; /* md:text-5xl */
   }
 }
 
@@ -100,7 +95,9 @@
 }
 
 .saga-feature-text {
-  color: #e2e8f0; /* slate-200 */
+  font-size: 20px;
+  font-weight: 600;
+  color: #fbbf24; /* slate-200 */
 }
 
 /* WHY LIST */
@@ -118,6 +115,7 @@
 }
 
 .saga-why-text {
+  font-size: 20px;
   color: #e2e8f0; /* slate-200 */
 }
 
@@ -227,7 +225,7 @@
   margin-bottom: 32px;
 }
 .saga-flex-img {
-  max-width: 50%;
+  max-width: 55%;
 }
 
 .saga-flex-img img {

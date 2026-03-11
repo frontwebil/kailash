@@ -30,7 +30,7 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
             ))}
           </div>
 
-          <h3 className="saga-why-title">{t.sagaDawa.why}</h3>
+          <h3 className="saga-why-title section-title-font-size">{t.sagaDawa.why}</h3>
 
           <div className="saga-flex-container">
             <div className="saga-why">
@@ -41,7 +41,7 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
               ))}
             </div>
             <div className="saga-flex-img">
-              <img src="/palomniki.webp" alt="" className="w-1/2" />
+              <img src="/sunset.jpg" alt="" className="w-1/2" />
             </div>
           </div>
 

@@ -16,7 +16,7 @@ export function WhatIsSection() {
 
       <div className="whatis-container">
         <div className="whatis-inner">
-          <h2 className="whatis-title">{t.whatIs.title}</h2>
+          <h2 className="whatis-title section-title-font-size">{t.whatIs.title}</h2>
 
           <p className="whatis-subtitle">{t.whatIs.subtitle}</p>
 
@@ -29,8 +29,6 @@ export function WhatIsSection() {
               </div>
             ))}
           </div>
-
-          <p className="whatis-conclusion">{t.whatIs.conclusion}</p>
         </div>
       </div>
     </section>

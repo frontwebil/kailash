@@ -1,7 +1,11 @@
 /* SECTION */
 .forwhom {
   padding: 80px 0; /* py-20 */
-  background: linear-gradient(to bottom, #1e293b, #0f172a); /* from-slate-800 to-slate-900 */
+  background: linear-gradient(
+    to bottom,
+    #1e293b,
+    #0f172a
+  ); /* from-slate-800 to-slate-900 */
 }
 
 /* CONTAINER */
@@ -28,9 +32,6 @@
 
 /* INNER WRAP */
 .forwhom-inner {
-  max-width: 1152px; /* max-w-6xl */
-  margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   gap: 48px; /* space-y-12 */
@@ -85,7 +86,9 @@
 }
 
 /* small utility */
-.mb4 { margin-bottom: 16px; }
+.mb4 {
+  margin-bottom: 16px;
+}
 
 /* LIST */
 .forwhom-list {
@@ -129,7 +132,10 @@
   font-size: 18px; /* text-lg */
   font-weight: 500; /* font-medium */
 
-  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
   transform: translateZ(0);
 
   /* shadow-lg shadow-amber-900/50 */

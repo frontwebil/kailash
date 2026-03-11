@@ -25,7 +25,7 @@ export function KoraSection() {
             </div>
           </div>
 
-          <h2 className="kora-title">{t.kora.title}</h2>
+          <h2 className="kora-title section-title-font-size">{t.kora.title}</h2>
 
           <p className="kora-description">{t.kora.description}</p>
 
