@@ -146,11 +146,11 @@
 }
 
 .gallery-slider-prev {
-  left: -8px;
+  right: 100%;
 }
 
 .gallery-slider-next {
-  right: -8px;
+  left: 100%;
 }
 
 .gallery-slider-pagination {
