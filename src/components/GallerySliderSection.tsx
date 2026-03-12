@@ -108,6 +108,7 @@ export function GallerySliderSection() {
                       src={slide.image}
                       alt={`Галерея Кайлаш фото ${i + 1}`}
                       className="gallery-slide-image"
+                      loading="lazy"
                     />
                   </div>
                   {/* 
