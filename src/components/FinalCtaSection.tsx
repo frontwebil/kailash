@@ -9,13 +9,21 @@ interface FinalCtaSectionProps {
 export function FinalCtaSection({ onCtaClick }: FinalCtaSectionProps) {
   const { t } = useLanguage();
 
+  const deadline = new Date();
+  deadline.setDate(deadline.getDate() + 3);
+
+  const formattedDate = deadline.toLocaleDateString("uk-UA", {
+    day: "numeric",
+    month: "2-digit",
+  });
+
   return (
     <section className="finalcta">
       <div
         className="finalcta-bg"
         style={{
           backgroundImage: "url(/kora.jpg)",
-          backgroundPosition: "сenter",
+          backgroundPosition: "center",
         }}
       >
         <div className="finalcta-overlay"></div>
@@ -27,8 +35,9 @@ export function FinalCtaSection({ onCtaClick }: FinalCtaSectionProps) {
 
           <div className="finalcta-price-box">
             <p className="finalcta-price-note">
-              {t.finalCta.priceNote}{" "}
-              <span className="line-through font-normal">3500€</span>
+              Вартість <strong>2900€</strong>{" "}
+              <span className="line-through font-normal">3200€</span> тільки до{" "}
+              {formattedDate}
             </p>
           </div>
 

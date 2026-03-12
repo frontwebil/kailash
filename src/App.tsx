@@ -12,6 +12,7 @@ import { StatusSection } from "./components/StatusSection";
 import { FinalCtaSection } from "./components/FinalCtaSection";
 import { ApplicationForm } from "./components/ApplicationForm";
 import { Footer } from "./components/Footer";
+import { GallerySliderSection } from "./components/GallerySliderSection";
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -29,8 +30,10 @@ function App() {
 
         <ForWhomSection onCtaClick={() => setIsFormOpen(true)} />
 
+        <GallerySliderSection />
+
         <KoraSection />
-        
+
         <SafetySection onCtaClick={() => setIsFormOpen(true)} />
 
         <ManasarovarSection />

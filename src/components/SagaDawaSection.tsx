@@ -25,6 +25,7 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
           {t.sagaDawa.features.map((feature, index) => (
             <div key={index} className="saga-feature-card">
               <p className="saga-feature-text">• {feature}</p>
+              {/* <img src={`/dava/${index}.jpg`} alt="" /> */}
             </div>
           ))}
         </div>
