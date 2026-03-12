@@ -34,8 +34,14 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[rgba(45,34,18,0.55)] backdrop-blur-sm">
-      <div className="relative w-full max-w-md rounded-2xl border border-[#e4d7b6] bg-[rgba(255,255,255,0.78)] shadow-[0_20px_60px_rgba(91,69,24,0.18)] backdrop-blur-xl">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[rgba(45,34,18,0.55)] backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-md rounded-2xl border border-[#e4d7b6] bg-[rgba(255,255,255,0.78)] shadow-[0_20px_60px_rgba(91,69,24,0.18)] backdrop-blur-xl"
+      >
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-[#8a7443] transition-colors hover:text-[#2d2212]"
