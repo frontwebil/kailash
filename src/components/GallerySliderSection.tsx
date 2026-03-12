@@ -9,28 +9,28 @@ import "../styles/GallerySliderSection.css";
 
 const slides = [
   {
-    image: "/dava/dava-1.jpg",
+    image: "/dava/dava-1.webp",
   },
   {
-    image: "/dava/dava-2.JPG",
+    image: "/dava/dava-2.webp",
   },
   {
-    image: "/dava/dava-3.jpg",
+    image: "/dava/dava-3.webp",
   },
   {
-    image: "/dava/dava-4.jpg",
+    image: "/dava/dava-4.webp",
   },
   {
     image: "/potala.jpg",
   },
   {
-    image: "/road.jpg",
+    image: "/road.webp",
   },
   {
-    image: "/sunset.jpg",
+    image: "/sunset.webp",
   },
   {
-    image: "/sunset-2.jpg",
+    image: "/sunset-2.webp",
   },
 ];
 
