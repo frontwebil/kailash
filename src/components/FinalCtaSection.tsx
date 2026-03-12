@@ -7,7 +7,7 @@ interface FinalCtaSectionProps {
 }
 
 export function FinalCtaSection({ onCtaClick }: FinalCtaSectionProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const deadline = new Date();
   deadline.setDate(deadline.getDate() + 3);
@@ -35,9 +35,19 @@ export function FinalCtaSection({ onCtaClick }: FinalCtaSectionProps) {
 
           <div className="finalcta-price-box">
             <p className="finalcta-price-note">
-              Вартість <strong>2900€</strong>{" "}
-              <span className="line-through font-normal">3200€</span> тільки до{" "}
-              {formattedDate}
+              {language == "uk" ? (
+                <>
+                  Вартість <strong>2900€</strong>{" "}
+                  <span className="line-through font-normal">3200€</span> тільки
+                  до {formattedDate}
+                </>
+              ) : (
+                <>
+                  Цена <strong>2900€</strong>{" "}
+                  <span className="line-through font-normal">3200€</span> только
+                  до {formattedDate}
+                </>
+              )}
             </p>
           </div>
 

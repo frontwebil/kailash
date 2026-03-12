@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/GallerySliderSection.css";
+import { useLanguage } from "../context/LanguageContext";
 
 const slides = [
   {
@@ -24,33 +25,30 @@ const slides = [
     image: "/potala.jpg",
   },
   {
-    image: "/road.webp",
-  },
-  {
     image: "/sunset.webp",
   },
   {
     image: "/sunset-2.webp",
   },
+  {
+    image: "/manasovar.webp",
+  },
 ];
 
 export function GallerySliderSection() {
+  const { t } = useLanguage();
+
+  console.log(t);
+
   return (
     <section className="gallery-slider">
       <div className="gallery-slider-container">
         <div className="gallery-slider-head">
-          {/* <div className="gallery-slider-badge">
-            <ImageIcon className="gallery-slider-badge-icon" size={20} />
-            <span className="gallery-slider-badge-text">Gallery</span>
-          </div> */}
-
           <h2 className="gallery-slider-title section-title-font-size">
-            Атмосфера подорожі
+            {t.gallery.title}
           </h2>
 
-          <p className="gallery-slider-subtitle">
-            Кілька візуальних моментів, які передають настрій експедиції
-          </p>
+          <p className="gallery-slider-subtitle">{t.gallery.subTitle}</p>
         </div>
 
         <div className="gallery-slider-wrap">

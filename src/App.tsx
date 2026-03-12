@@ -6,7 +6,6 @@ import { SagaDawaSection } from "./components/SagaDawaSection";
 import { WhatIsSection } from "./components/WhatIsSection";
 import { ForWhomSection } from "./components/ForWhomSection";
 import { KoraSection } from "./components/KoraSection";
-import { ManasarovarSection } from "./components/ManasarovarSection";
 import { SafetySection } from "./components/SafetySection";
 import { StatusSection } from "./components/StatusSection";
 import { FinalCtaSection } from "./components/FinalCtaSection";
@@ -35,8 +34,6 @@ function App() {
         <KoraSection />
 
         <SafetySection onCtaClick={() => setIsFormOpen(true)} />
-
-        <ManasarovarSection />
 
         <StatusSection onCtaClick={() => setIsFormOpen(true)} />
 

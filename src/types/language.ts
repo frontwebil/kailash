@@ -1,4 +1,4 @@
-export type Language = 'uk' | 'ru';
+export type Language = "uk" | "ru";
 
 export interface TranslationContent {
   hero: {
@@ -74,6 +74,10 @@ export interface TranslationContent {
     features: string[];
     note: string;
     cta: string;
+  };
+  gallery: {
+    title: string;
+    subTitle: string;
   };
   status: {
     title: string;

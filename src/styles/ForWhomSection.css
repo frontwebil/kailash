@@ -146,3 +146,17 @@
   background: #b8964f;
   transform: scale(1.05);
 }
+
+@media (max-width: 1000px) {
+  .forwhom {
+    padding: 40px 0;
+  }
+
+  .forwhom-card-head {
+    align-items: flex-start;
+  }
+
+  .forwhom-card{
+    padding: 24px;
+  }
+}

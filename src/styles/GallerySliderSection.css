@@ -146,11 +146,11 @@
 }
 
 .gallery-slider-prev {
-  right: 100%;
+  left: 0;
 }
 
 .gallery-slider-next {
-  left: 100%;
+  right: 0;
 }
 
 .gallery-slider-pagination {
@@ -178,7 +178,7 @@
 
 @media (max-width: 1024px) {
   .gallery-slide-image-wrap {
-    height: 360px;
+    height: 600px;
   }
 }
 
@@ -188,7 +188,7 @@
   }
 
   .gallery-slide-image-wrap {
-    height: 300px;
+    height: 450px;
   }
 
   .gallery-slide-title {
@@ -202,9 +202,11 @@
 
   .gallery-slider-prev {
     left: 0;
+    top: 99%;
   }
 
   .gallery-slider-next {
     right: 0;
+    top: 99%;
   }
 }

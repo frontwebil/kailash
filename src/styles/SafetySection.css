@@ -136,3 +136,9 @@
   background: #b8964f;
   transform: scale(1.05);
 }
+
+@media (max-width: 1100px) {
+  .safety {
+    padding: 40px 0;
+  }
+}

@@ -18,6 +18,25 @@
 }
 
 .section-title-font-size {
-  font-size: 48px !important;
+  font-size: 28px !important;
   font-weight: 600 !important;
+  line-height: 1.2;
+}
+
+@media (min-width: 480px) {
+  .section-title-font-size {
+    font-size: 34px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title-font-size {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title-font-size {
+    font-size: 48px !important;
+  }
 }

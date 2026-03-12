@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { useLanguage } from '../context/LanguageContext';
-import { X, Send } from 'lucide-react';
+import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { X, Send } from "lucide-react";
 
 interface ApplicationFormProps {
   isOpen: boolean;
@@ -10,22 +10,20 @@ interface ApplicationFormProps {
 export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
-    name: '',
-    contact: '',
-    email: '',
+    name: "",
+    contact: "",
+    email: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   if (!isOpen) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError('');
-
-   
+    setError("");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,31 +34,34 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/90 backdrop-blur-sm">
-      <div className="relative w-full max-w-md bg-slate-800 rounded-xl border border-slate-700 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[rgba(45,34,18,0.55)] backdrop-blur-sm">
+      <div className="relative w-full max-w-md rounded-2xl border border-[#e4d7b6] bg-[rgba(255,255,255,0.78)] shadow-[0_20px_60px_rgba(91,69,24,0.18)] backdrop-blur-xl">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+          className="absolute right-4 top-4 text-[#8a7443] transition-colors hover:text-[#2d2212]"
         >
           <X size={24} />
         </button>
 
-        <div className="p-8">
-          <h3 className="text-2xl md:text-3xl font-light text-white mb-6 text-center">
+        <div className="p-4 py-6 sm:p-8">
+          <h3 className="mb-6 text-center text-2xl font-light text-[#2d2212] md:text-3xl mt-5">
             {t.form.title}
           </h3>
 
           {isSuccess ? (
-            <div className="text-center py-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500/20 rounded-full mb-4">
-                <Send className="text-green-400" size={32} />
+            <div className="py-8 text-center">
+              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full border border-[#e4d7b6] bg-[#f3ead7]">
+                <Send className="text-[#b8964f]" size={32} />
               </div>
-              <p className="text-lg text-green-400">{t.form.success}</p>
+              <p className="text-lg text-[#5b4518]">{t.form.success}</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="mb-2 block text-sm font-medium text-[#5b4518]"
+                >
                   {t.form.name}
                 </label>
                 <input
@@ -70,13 +71,16 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-amber-600 transition-colors"
+                  className="w-full rounded-lg border border-[#e4d7b6] bg-[#fffdf8] px-4 py-3 text-[#2d2212] placeholder-[#b7a27a] outline-none transition-colors focus:border-[#c6a75e]"
                   placeholder={t.form.name}
                 />
               </div>
 
               <div>
-                <label htmlFor="contact" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="contact"
+                  className="mb-2 block text-sm font-medium text-[#5b4518]"
+                >
                   {t.form.contact}
                 </label>
                 <input
@@ -86,39 +90,41 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
                   required
                   value={formData.contact}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-amber-600 transition-colors"
-                  placeholder={t.form.contact}
+                  className="w-full rounded-lg border border-[#e4d7b6] bg-[#fffdf8] px-4 py-3 text-[#2d2212] placeholder-[#b7a27a] outline-none transition-colors focus:border-[#c6a75e]"
+                  placeholder="38(000)-000-0000"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-medium text-[#5b4518]"
+                >
                   {t.form.email}
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-amber-600 transition-colors"
+                  className="w-full rounded-lg border border-[#e4d7b6] bg-[#fffdf8] px-4 py-3 text-[#2d2212] placeholder-[#b7a27a] outline-none transition-colors focus:border-[#c6a75e]"
                   placeholder={t.form.email}
                 />
               </div>
 
               {error && (
-                <div className="p-3 bg-red-900/20 border border-red-600/50 rounded-lg">
-                  <p className="text-sm text-red-400">{error}</p>
+                <div className="rounded-lg border border-[#d9b4a7] bg-[#fff4f1] p-3">
+                  <p className="text-sm text-[#9b4b3f]">{error}</p>
                 </div>
               )}
 
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 bg-amber-600 hover:bg-amber-500 disabled:bg-amber-800 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-all transform hover:scale-105 disabled:transform-none shadow-lg shadow-amber-900/50"
+                className="w-full rounded-lg bg-[#c6a75e] px-6 py-4 font-medium text-white transition-all hover:scale-105 hover:bg-[#b8964f] disabled:cursor-not-allowed disabled:bg-[#cbb98e] disabled:hover:scale-100 shadow-[0_12px_24px_rgba(184,150,79,0.22)]"
               >
-                {isSubmitting ? '...' : t.form.submit}
+                {isSubmitting ? "..." : t.form.submit}
               </button>
             </form>
           )}

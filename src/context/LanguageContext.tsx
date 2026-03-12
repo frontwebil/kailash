@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
-import { Language } from '../types/language';
-import { translations } from '../data/translations';
+import { createContext, useContext, useState, ReactNode } from "react";
+import { Language } from "../types/language";
+import { translations } from "../data/translations";
 
 interface LanguageContextType {
   language: Language;
@@ -8,10 +8,12 @@ interface LanguageContextType {
   t: typeof translations.uk;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined,
+);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('uk');
+  const [language, setLanguage] = useState<Language>("uk");
 
   return (
     <LanguageContext.Provider
@@ -29,7 +31,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 export function useLanguage() {
   const context = useContext(LanguageContext);
   if (!context) {
-    throw new Error('useLanguage must be used within LanguageProvider');
+    throw new Error("useLanguage must be used within LanguageProvider");
   }
   return context;
 }

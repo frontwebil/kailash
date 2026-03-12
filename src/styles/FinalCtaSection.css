@@ -157,3 +157,15 @@
   background: #b8964f;
   transform: scale(1.05);
 }
+
+@media (max-width: 500px) {
+  .finalcta-benefit {
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+  }
+
+  .finalcta-price-box {
+    padding: 16px;
+  }
+}
