@@ -164,7 +164,7 @@ export const translations: Record<"uk" | "ru", TranslationContent> = {
       contact: "Телефон",
       email: "Email",
       submit: "Отримати програму",
-      success: "Дякуємо! Ми зв'яжемося з вами особисто протягом 24 годин",
+      success: "Дякуємо! Ми зв'яжемося з вами протягом 24 годин",
     },
   },
   ru: {
@@ -345,7 +345,7 @@ export const translations: Record<"uk" | "ru", TranslationContent> = {
       contact: "Телефон",
       email: "Email",
       submit: "Получить программу",
-      success: "Спасибо! Мы свяжемся с вами лично в течение 24 часов",
+      success: "Спасибо! Мы свяжемся с вами в течение 24 часов",
     },
   },
 };

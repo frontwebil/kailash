@@ -37,7 +37,6 @@ const slides = [
 
 export function GallerySliderSection() {
   const { t } = useLanguage();
-
   return (
     <section className="gallery-slider">
       <div className="gallery-slider-container">
