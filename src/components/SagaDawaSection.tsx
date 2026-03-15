@@ -14,7 +14,10 @@ export function SagaDawaSection({ onCtaClick }: SagaDawaSectionProps) {
       <div className="saga-container">
         <div className="saga-badge">
           <Sparkles className="saga-badge-icon" size={24} />
-          <span className="saga-badge-text">{t.sagaDawa.badge}</span>
+          <span className="saga-badge-text">
+            {t.sagaDawa.badge}{" "}
+            <span style={{ textWrap: "nowrap" }}>сага-дава</span>
+          </span>
         </div>
 
         <h2 className="saga-title">{t.sagaDawa.title}</h2>

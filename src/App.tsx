@@ -12,12 +12,14 @@ import { FinalCtaSection } from "./components/FinalCtaSection";
 import { ApplicationForm } from "./components/ApplicationForm";
 import { Footer } from "./components/Footer";
 import { GallerySliderSection } from "./components/GallerySliderSection";
+import { SetLanguagueToCountry } from "./components/SetLanguagueToCountry";
 
 function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
     <LanguageProvider>
+      <SetLanguagueToCountry />
       <div className="min-h-screen bg-slate-900">
         <Header />
 
