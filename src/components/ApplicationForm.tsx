@@ -74,12 +74,12 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[rgba(45,34,18,0.55)] backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-[rgba(45,34,18,0.7)]"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-md rounded-2xl border border-[#e4d7b6] bg-[rgba(255,255,255,0.78)] shadow-[0_20px_60px_rgba(91,69,24,0.18)] backdrop-blur-xl"
+        className="relative w-full max-w-md rounded-2xl border border-[#e4d7b6] bg-[#fffdf8] shadow-[0_20px_60px_rgba(91,69,24,0.28)]"
       >
         <button
           onClick={onClose}

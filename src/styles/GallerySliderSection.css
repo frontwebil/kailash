@@ -210,3 +210,15 @@
     top: 99%;
   }
 }
+
+@media (max-width: 768px) {
+  .gallery-slide-card {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: none;
+  }
+
+  .gallery-slider-nav {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: none;
+  }
+}

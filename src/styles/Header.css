@@ -43,7 +43,7 @@
 
   background: rgba(255, 255, 255, 0.1);
 
-  border: 1px solid rgba(198, 167, 94, 0.35);
+  border: 1px solid rgba(198, 167, 94, 0.9);
 
   transition:
     background 0.2s ease,
@@ -79,4 +79,11 @@
   backdrop-filter: blur(12px);
 
   border-bottom: 1px solid rgba(198, 167, 94, 0.25);
+}
+
+@media (max-width: 768px) {
+  .header.scrolled {
+    background: rgba(45, 34, 18, 0.9);
+    backdrop-filter: none;
+  }
 }

@@ -143,3 +143,10 @@
     text-align: left;
   }
 }
+
+@media (max-width: 768px) {
+  .status-card {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: none;
+  }
+}

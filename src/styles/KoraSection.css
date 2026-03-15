@@ -53,6 +53,13 @@
   backdrop-filter: blur(6px);
 }
 
+@media (max-width: 768px) {
+  .kora-inner {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: none;
+  }
+}
+
 /* ICON */
 .kora-icon-wrap {
   display: flex;

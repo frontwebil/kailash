@@ -68,10 +68,10 @@ export function GallerySliderSection() {
             spaceBetween={20}
             slidesPerView={1}
             loop
-            speed={700}
+            speed={600}
             autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
+              delay: 5000,
+              disableOnInteraction: true,
             }}
             navigation={{
               prevEl: ".gallery-slider-prev",

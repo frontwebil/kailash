@@ -15,7 +15,7 @@ export function HeroSection({ onCtaClick }: HeroSectionProps) {
         className="hero-bg"
         style={{
           backgroundImage:
-            "url(https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1920)",
+            "url(https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1200)",
         }}
       >
         <div className="hero-overlay" />

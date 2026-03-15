@@ -78,6 +78,13 @@
     0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
+@media (max-width: 768px) {
+  .finalcta-price-box {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: none;
+  }
+}
+
 .finalcta-price-note {
   font-size: 20px;
   color: #5b4518;
@@ -200,6 +207,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .finalcta-timer-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .finalcta-timer-value {
