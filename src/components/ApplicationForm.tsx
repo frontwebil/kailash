@@ -64,8 +64,8 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
         contact: "",
         email: "",
       });
-navigate("/thank");
-return;
+      navigate("/thank");
+      return;
     } catch (error) {
       console.error("Telegram notification error:", error);
       throw new Error("Failed to send booking notification");
