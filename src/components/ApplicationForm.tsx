@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { X, Send } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ApplicationFormProps {
   isOpen: boolean;
@@ -8,6 +9,7 @@ interface ApplicationFormProps {
 }
 
 export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
+  const navigate = useNavigate();
   const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_BOT_API_KEY;
   const TELEGRAM_CHAT_ID = import.meta.env.VITE_CHAT_ID;
   const URI_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
@@ -62,8 +64,8 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
         contact: "",
         email: "",
       });
-      setIsSuccess(true);
-      return;
+navigate("/thank");
+return;
     } catch (error) {
       console.error("Telegram notification error:", error);
       throw new Error("Failed to send booking notification");
