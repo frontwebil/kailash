@@ -9,6 +9,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 640px) {
+  .hero {
+    align-items: end;
+    padding-bottom: 18px;
+  }
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
