@@ -2,10 +2,12 @@ import { useLanguage } from "../context/LanguageContext";
 import { Globe, Mountain } from "lucide-react";
 import "../styles/Header.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
+  const targetLanguagePath = language === "uk" ? "/ru" : "/uk";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,13 +29,10 @@ export function Header() {
           KAILASH
         </div>
 
-        <button
-          onClick={() => setLanguage(language === "uk" ? "ru" : "uk")}
-          className="lang-button"
-        >
+        <Link to={targetLanguagePath} className="lang-button">
           <Globe size={18} className="globe-icon" />
           <span className="lang-text">{language === "uk" ? "RU" : "UA"}</span>
-        </button>
+        </Link>
       </div>
     </header>
   );

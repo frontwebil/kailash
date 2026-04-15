@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LanguageProvider } from "./context/LanguageContext";
+import { FixedLanguageProvider } from "./context/LanguageContext";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { SagaDawaSection } from "./components/SagaDawaSection";
@@ -12,14 +12,17 @@ import { FinalCtaSection } from "./components/FinalCtaSection";
 import { ApplicationForm } from "./components/ApplicationForm";
 import { Footer } from "./components/Footer";
 import { GallerySliderSection } from "./components/GallerySliderSection";
-import { SetLanguagueToCountry } from "./components/SetLanguagueToCountry";
+import { Language } from "./types/language";
 
-function App() {
+interface AppProps {
+  language: Language;
+}
+
+function App({ language }: AppProps) {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
-    <LanguageProvider>
-      <SetLanguagueToCountry />
+    <FixedLanguageProvider initialLanguage={language}>
       <div className="min-h-screen bg-slate-900">
         <Header />
 
@@ -48,7 +51,7 @@ function App() {
           onClose={() => setIsFormOpen(false)}
         />
       </div>
-    </LanguageProvider>
+    </FixedLanguageProvider>
   );
 }
 

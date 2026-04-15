@@ -13,7 +13,7 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
   const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_BOT_API_KEY;
   const TELEGRAM_CHAT_ID = import.meta.env.VITE_CHAT_ID;
   const URI_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
@@ -64,7 +64,7 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
         contact: "",
         email: "",
       });
-      navigate("/thank");
+      navigate(`/${language}/thank`);
       return;
     } catch (error) {
       console.error("Telegram notification error:", error);
@@ -104,10 +104,10 @@ export function ApplicationForm({ isOpen, onClose }: ApplicationFormProps) {
               </div>
               <p className="text-lg text-[#5b4518]">{t.form.success}</p>
               <a
-                href="/"
+                href={`/${language}`}
                 className="block w-full mt-5 rounded-lg bg-[#c6a75e] px-6 py-4 font-medium text-white transition-all hover:scale-105 hover:bg-[#b8964f] disabled:cursor-not-allowed disabled:bg-[#cbb98e] disabled:hover:scale-100 shadow-[0_12px_24px_rgba(184,150,79,0.22)]"
               >
-                На головну
+                {language === "uk" ? "На головну" : "На главную"}
               </a>
             </div>
           ) : (
